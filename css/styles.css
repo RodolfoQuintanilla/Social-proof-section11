@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10vh;
+}
+
+.main {
+  display: flex;
+}
+
+.main__start {
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuadro{
+    width: 350px;
+    border: 1px solid red;
+}
