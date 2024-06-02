@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -6,21 +17,129 @@
 
 body {
   padding: 10vh;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url(../images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+ border: 1px solid purple;
 }
 
-.main {
+
+
+.main, .card {
   display: flex;
+  justify-content: space-around;
+ /*  margin-bottom: 3rem;
+  justify-content: center; */
 }
+
+.main__date {
+  border: 1px solid red;
+  width: 30%;
+  padding: 10px;
+}
+
+.main__date__h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: var(--VeryDarkMagenta);
+}
+
+.main__date__p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 
 .main__start {
+  border: 1px solid blue;
+  width: 49%;
 }
 
-.card{
-    display: flex;
-    justify-content: space-between;
+.uno{
+  margin-left: 20%;
+  margin-top: 5%;
 }
 
-.cuadro{
-    width: 350px;
-    border: 1px solid red;
+.dos{
+  margin-left: 30%;
+}
+
+.tres{
+  margin-left: 40%;
+}
+
+.main__start__text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--VeryDarkMagenta);
+  background-color: var(--LightGrayishMagenta);
+  font-weight: 700;
+  width: 380px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card {
+  margin-top: 50px;
+}
+
+.cuadro {
+  width: 350px;
+ 
+  background-color: var(--VeryDarkMagenta);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--White);
+}
+
+span{
+  color: var(--SoftPink);
+  text-align: center;
+
+}
+
+h2 img{
+  border-radius: 50%;
+width: 50px;
+}
+
+
+
+.cinco{
+  position: relative;
+  bottom: -40px;
+}
+
+.seis{
+  position: relative;
+  bottom: -70px;
+  
+}
+
+@media screen and (max-width:1000px) {
+  .cuatro{
+    margin-right: 10px;
+  }
+  .cinco{
+    position: relative;
+    bottom: 0px;
+    margin-right: 10px;
+  }
+  
+  .seis{
+    position: relative;
+    bottom:0px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width:749px) {
+  .main{
+   flex-direction: row;
+  }
 }
